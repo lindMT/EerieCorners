@@ -107,6 +107,19 @@ h1 {
     text-align: justify;
 }
 
+.post-pc {
+    font-size: 1.5em;
+    color: white;
+    background: gray;
+    text-align: justify;
+}
+.post-pca {
+    font-size: 1.5em;
+    color: white;
+    background: gray;
+    text-align: right;
+}
+
 /* for the glitching effect */
 .box {
     position: absolute;
