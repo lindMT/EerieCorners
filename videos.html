@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Eerie Corners</title>        
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.png" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter&family=VT323&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <div class="topnav" id="glitch"> 
+        <div class="title">
+            <p style="margin: 0px;">
+                Eerie Corners
+            </p>
+        </div>
+
+        <a class="nav-links" href="home.html">
+            Home 🏠
+        </a>
+        <a class="nav-links" href="posts.html">
+            Posts 📝
+        </a>
+        <a class="nav-links" href="videos.html">
+            Videos 🎥
+        </a>
+        <a class="nav-links" href="contact.html">
+            Contact Me 📞
+        </a>
+    </div>
+
+    <body id="glitch">
+        <div class="container" style="text-align: center; color: white;">
+            
+            <h1>
+                Be
+                <div style="display: inline-block; color: red">
+                    warned.
+                </div>
+            </h1>
+          
+            
+            <div class="posts-container">
+                <video width="500px" height="400px" controls="controls">
+                    <source src="vid.mp4" type="video/mp4" />
+                </video>
+
+                 
+                <video width="500px" height="400px" controls="controls">
+                    <source src="vid.mp4" type="video/mp4" />
+                </video>
+            </div>
+
+        </div>
+    </body>
+    
+    <script type="text/javascript">
+        let bg = document.getElementById('glitch');
+        let count = 20;
+        for (let i=0; i< count; i++){
+            let glitchBox = document.createElement('div');
+                glitchBox.className = 'box';
+                bg.appendChild(glitchBox);
+        }
+        
+        setInterval(function(){
+            let glitch= document.getElementsByClassName('box');
+            for (let i=0; i< glitch.length; i++){
+                let glitchBox = document.createElement('div');
+                    glitch[i].style.left = Math.floor(Math.random()*100) + '%';
+                    glitch[i].style.top = Math.floor(Math.random()*100) + '%';
+                    glitch[i].style.width = Math.floor(Math.random()*200) + 'px';
+                    glitch[i].style.height = Math.floor(Math.random()*300) + 'px';
+            }
+        }, 500)
+        
+        
+    </script>
+
+</html>

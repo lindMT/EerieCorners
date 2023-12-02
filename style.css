@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    background-color: #131313;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* for topnav */
+.title {
+    display: block;
+    padding: 16px;
+    margin: 0px;
+    font: 2.5em Creepster;
+}
+
+.title p {
+    color: red;
+    margin: 0px;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: rgb(125, 0, 0);
+    }
+    50% {
+        color: white; 
+    }
+}
+
+.topnav {
+    background-color: black;
+    color: white;
+    border-bottom: 5px solid rgb(125, 0, 0);
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.nav-links {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    min-height: 16px;
+    min-width: 16px;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.topnav a:hover {
+    background-color: #131313;
+    color: red;
+}
+
+/* main content container */
+.container {
+    background-color: black;
+    margin: 5vh 10vw;
+    min-height: 60vh;
+    padding: 32px;
+    text-align: center;
+}
+
+/* image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    width: calc(33.33% - 10px); /* Adjust the width as needed, considering margin */
+    margin-bottom: 10px; /* Add margin between images and rows */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* posts */
+.red-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px; 
+}
+
+.red-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; /* Center the grid horizontally */
+}
+
+.post-p {
+    font-size: 1.5em;
+    color: white;
+    text-align: justify;
+}
+
+/* for the glitching effect */
+.box {
+    position: absolute;
+    background: url(images/matrix.png);
+    background-attachment: fixed;
+}
